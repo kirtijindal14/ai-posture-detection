@@ -1,5 +1,15 @@
 # 🧍 AI Posture Detection System
+---
 
+## 📸 Demo
+
+### ✅ Good Posture
+![Good Posture](good_posture.png)
+
+### ❌ Slouching
+![Slouching](slouching.png)
+
+---
 A real-time computer vision application that detects user posture using pose estimation and computes a dynamic posture score.
 
 ---
