@@ -1,51 +1,49 @@
-# 🧍 AI Posture Detection System
----
+# AI-Based Real-Time Posture Detection System
 
-## 📸 Demo
+## 🚀 Overview
+This project detects human posture in real-time using computer vision and machine learning. It also provides analytics through a live dashboard.
 
-### ✅ Good Posture
-![Good Posture](good_posture.png)
+## 🧠 Features
+- Real-time posture detection using MediaPipe
+- Machine Learning model (Random Forest)
+- Automatic dataset generation
+- Hybrid posture classification (ML + angle)
+- Data logging system
+- Streamlit dashboard for analytics
 
-### ❌ Slouching
-![Slouching](slouching.png)
+## 🏗️ System Architecture
+Webcam → MediaPipe → Feature Extraction → ML Model → Prediction → CSV Logging → Dashboard
 
----
-A real-time computer vision application that detects user posture using pose estimation and computes a dynamic posture score.
-
----
-
-## 🚀 Features
-
-- Real-time body landmark detection using MediaPipe Pose
-- Neck angle computation using geometric vector analysis
-- Slouch detection based on angular threshold
-- Live posture score percentage overlay
-- macOS-compatible camera backend
-
----
-
-## 🧠 How It Works
-
-1. Detects 33 body landmarks using MediaPipe Pose.
-2. Extracts nose and shoulder coordinates.
-3. Computes neck angle relative to a vertical reference.
-4. Classifies posture as Good or Slouching.
-5. Displays real-time feedback overlay.
-
----
-
-## 🛠 Tech Stack
-
-- Python 3.11
+## 🛠️ Tech Stack
 - OpenCV
 - MediaPipe
 - NumPy
+- Scikit-learn
+- Streamlit
 
----
+## 📊 Dashboard
+Shows:
+- Posture score
+- Posture distribution
+- Spine angle trends
 
-## ▶️ How To Run
+## ▶️ How to Run
 
-```bash
-python posture_detector.py
-```
-Press `Q` or `Esc` to exit.
+### Step 1
+cd posture-ai  
+source venv/bin/activate  
+
+### Step 2 (Dashboard)
+streamlit run dashboard.py  
+
+### Step 3 (Model)
+python posture_detector.py  
+
+## 📈 Output
+- Real-time posture classification
+- Live analytics dashboard
+
+## 🎯 Future Work
+- Deep learning models (LSTM)
+- Mobile application
+- Multi-user posture tracking
